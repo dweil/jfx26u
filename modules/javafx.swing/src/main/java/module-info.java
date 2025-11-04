@@ -43,6 +43,5 @@ module javafx.swing {
 
     exports javafx.embed.swing;
 
-    exports com.sun.javafx.embed.swing to
-        javafx.graphics;
+    exports com.sun.javafx.embed.swing ;
 }
