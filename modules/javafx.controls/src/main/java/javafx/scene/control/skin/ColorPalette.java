@@ -69,13 +69,18 @@ import java.util.List;
 import static com.sun.javafx.scene.control.Properties.getColorPickerString;
 
 // Not public API - this is (presently) an implementation detail only
-class ColorPalette extends Region {
+public class ColorPalette extends Region {
 
     private static final int SQUARE_SIZE = 15;
 
     // package protected for testing purposes
     ColorPickerGrid colorPickerGrid;
     final Hyperlink customColorLink = new Hyperlink(getColorPickerString("customColorLink"));
+
+    public CustomColorDialog getCustomColorDialog() {
+        return customColorDialog;
+    }
+
     CustomColorDialog customColorDialog = null;
 
     private ColorPicker colorPicker;
@@ -433,8 +438,7 @@ class ColorPalette extends Region {
     }
 
     public boolean isCustomColorDialogShowing() {
-        if (customColorDialog != null) return customColorDialog.isVisible();
-        return false;
+        return customColorDialog != null && customColorDialog.getDialog() != null && customColorDialog.getDialog().isShowing();
     }
 
 

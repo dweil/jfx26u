@@ -842,6 +842,10 @@ final public class StyleManager {
 
     private final ImageCache imageCache = new ImageCache();
 
+    public void clearImageCache() {
+        imageCache.imageCache.clear();
+    }
+
     public Image getCachedImage(String url) {
         return imageCache.getCachedImage(url);
     }

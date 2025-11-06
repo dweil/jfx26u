@@ -249,6 +249,12 @@ public abstract class PopupWindow extends Window {
         return ownerNode.getReadOnlyProperty();
     }
 
+    public final void resetOwnerNode() {
+        this.ownerNode.set(null);
+    }
+    public final void resetOwnerWindow() {
+        this.ownerWindow.set(null);
+    }
     /**
      * Note to subclasses: the scene used by PopupWindow is very specifically
      * managed by PopupWindow. This method is overridden to throw
