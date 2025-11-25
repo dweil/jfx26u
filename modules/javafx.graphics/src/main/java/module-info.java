@@ -69,6 +69,7 @@ module javafx.graphics {
     exports com.sun.glass.ui ;
     exports com.sun.glass.utils ;
     exports com.sun.javafx.application;
+    opens com.sun.javafx.application;
     exports com.sun.javafx.css;
     exports com.sun.javafx.cursor ;
     exports com.sun.javafx.embed ;
