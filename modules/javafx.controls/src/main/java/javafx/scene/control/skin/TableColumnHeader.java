@@ -1078,6 +1078,7 @@ public class TableColumnHeader extends Region {
                 if (isAscending(getTableColumn())) {
                     setSortType(getTableColumn(), TableColumn.SortType.DESCENDING);
                 } else {
+                    setSortType(getTableColumn(),null);
                     // remove from sort
                     sortOrder.remove(getTableColumn());
                 }
