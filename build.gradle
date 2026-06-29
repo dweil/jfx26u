@@ -4754,6 +4754,7 @@ task javadoc(type: Javadoc, dependsOn: [createMSPfile, createOverviewFile]) {
     options.addStringOption("-since-label").setValue("New API since JavaFX 9")
     options.addStringOption("Xmaxwarns").setValue("1000")
     options.addStringOption("Xmaxerrs").setValue("1000")
+    options.addStringOption("--ignore-source-error")
 
     String overviewFile = "$buildDir/overview.html"
     options.addStringOption("overview").setValue(overviewFile)
