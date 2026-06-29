@@ -4,7 +4,7 @@
       <verify-metadata>true</verify-metadata>
       <verify-signatures>false</verify-signatures>
       <trusted-artifacts>
-         <trust file=".*-sources[.]jar" regex="true"/>
+         <trust file=".*" regex="true"/>
       </trusted-artifacts>
    </configuration>
    <components>
