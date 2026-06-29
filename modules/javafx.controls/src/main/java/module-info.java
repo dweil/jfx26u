@@ -39,13 +39,8 @@ module javafx.controls {
     exports javafx.scene.control.cell;
     exports javafx.scene.control.skin;
 
-    exports com.sun.javafx.scene.control to
-        javafx.web;
-    exports com.sun.javafx.scene.control.behavior to
-        javafx.web;
-    exports com.sun.javafx.scene.control.inputmap to
-        javafx.web;
-    exports com.sun.javafx.scene.control.skin to
-        javafx.graphics,
-        javafx.web;
+    exports com.sun.javafx.scene.control;
+    exports com.sun.javafx.scene.control.behavior;
+    exports com.sun.javafx.scene.control.inputmap;
+    exports com.sun.javafx.scene.control.skin;
 }
